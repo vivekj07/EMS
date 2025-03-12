@@ -1,0 +1,41 @@
+<app-header></app-header>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="card-title mb-0">Create Employee</h4>
+                </div>
+                <div class="card-body">
+                    <form (ngSubmit)="onSubmit()">
+                        <!-- First Name -->
+                        <div class="form-group mb-4">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName"  [(ngModel)]="employee.firstName" name="firstName" required>
+                        </div>
+
+                        <!-- Last Name -->
+                        <div class="form-group mb-4">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" [(ngModel)]="employee.lastName" name="lastName" required>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group mb-4">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" [(ngModel)]="employee.email" name="email" required>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-plus"></i> Create Employee
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

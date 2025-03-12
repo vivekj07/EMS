@@ -1,0 +1,18 @@
+header {
+    background-color: #1976D2;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    height: 4rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  

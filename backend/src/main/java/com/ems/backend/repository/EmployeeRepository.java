@@ -11,7 +11,7 @@ import com.ems.backend.model.Employee;
 
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
-    @Query("select e from Employee e order by e.firstName asc, e.lastName ASC") // use class variables
+    @Query("select e from Employee e order by e.id asc") // use class variables
     List<Employee> customfindAll();
 
     @Query("select e from Employee e where e.id=?1")

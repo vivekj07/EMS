@@ -121,7 +121,7 @@ public class EmployeeController {
                 .orElseThrow(() -> new ResourceNotFoundException("Employee not found with id: " + id));
 
         employeeRepository.delete(employee);
-        return ResponseEntity.ok("Employee deleted successfully.");
+        return ResponseEntity.ok(employee);
     }
 
 }
